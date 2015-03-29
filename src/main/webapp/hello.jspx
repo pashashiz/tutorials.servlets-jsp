@@ -1,0 +1,16 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          version="2.1">
+    <jsp:directive.page isELIgnored="false" contentType="text/html; ISO-8859-1"/>
+    <html>
+    <head><title>Hello page</title></head>
+    <body>
+    <div>Headers: <c:out value="${header}"/></div>
+    <div>Title: <c:out value="${title}"/></div>
+    <div>Servlet config param 1: <c:out value="${servletParam1}"/></div>
+    <div>Context config param 1: <c:out value="${contextParam2}"/></div>
+    <div>Request params values: <c:out value="${paramValues}"/></div>
+    </body>
+    </html>
+</jsp:root>

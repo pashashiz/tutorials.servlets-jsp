@@ -1,0 +1,33 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <context-param>
+        <param-name>context-param2</param-name>
+        <param-value>context-value2</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>com.ps.tutorial.sj.listeners.ContextListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.ps.tutorial.sj.listeners.SessionListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.ps.tutorial.sj.listeners.RequestListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.ps.tutorial.sj.servlets.Hello</servlet-class>
+        <init-param>
+            <param-name>servlet-param1</param-name>
+            <param-value>servlet-value1</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
